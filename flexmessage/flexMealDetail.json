@@ -1,0 +1,409 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": `วันที่ ${date}`,
+            "wrap": true,
+            "color": "#aaaaaa",
+            "size": "xxs"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${mealname}`,
+                    "size": "lg",
+                    "weight": "bold",
+                    "gravity": "bottom",
+                    "flex": 1
+                  },
+                  {
+                    "type": "text",
+                    "text": `${data[i].data.foodname}`,
+                    "gravity": "center",
+                    "flex": 1,
+                    "wrap": true
+                  }
+                ],
+                "flex": 3
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": `${data[i].data.image}`,
+                    "aspectRatio": "4:4",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": `${data[i].data.image}`
+                    }
+                  }
+                ],
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              }
+            ],
+            "backgroundColor": "#EDEDED",
+            "height": "1px"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Frice.png?alt=media&token=2f5a0058-69b1-40d1-883c-b6fa1a65cc27",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "ข้าว-แป้ง",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.rice}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ทัพพี",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Ffruits.png?alt=media&token=6d92ee25-4cdf-47dd-b973-8ab3d50c3068",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "ผลไม้",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.fruits}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ส่วน",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Fdiet.png?alt=media&token=7e92f872-fe7c-497a-b6a5-d5030e633690",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "ผัก",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.vegetable}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ทัพพี",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Fmilk.png?alt=media&token=a3a99132-9a48-4113-a975-cfe1b18edc13",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "นม",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.milk}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "แก้ว",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Fturkey.png?alt=media&token=36d1393c-dded-43f8-b8ee-b62a9ec36f8c",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "เนื้อสัตว์",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.meat}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ช้อนข้าว",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Fgreen-beans.png?alt=media&token=a482cdcf-765d-416f-af57-519fff152727",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "ไขมัน/ถั่ว",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.fat}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ช้อนชา",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Fsugar.png?alt=media&token=140958f6-6807-4ab9-89be-03dff9200218",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "น้ำตาล",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.sugar}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ช้อนชา",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Fsalt.png?alt=media&token=551326e3-d644-4639-97ee-0f6fbf8b6472",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "โซเดียม",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.sodium}`,
+                "size": "sm",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "ช้อนชา",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/icon%2FFlex%2Ffire.png?alt=media&token=5d5f4e37-8a8c-4256-a268-ebf09a2898d6",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "พลังงานรวม",
+                "weight": "bold",
+                "margin": "sm",
+                "flex": 2,
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": `${data[i].data.kcal}`,
+                "size": "sm",
+                "align": "center",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "Kcal",
+                "align": "center",
+                "flex": 1,
+                "size": "sm"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "color": "#FF7777",
+            "action": {
+              "type": "uri",
+              "label": "แก้ไข",
+              "uri": `line://app/1653604028-eY9NDBly?meal=${meal}&date=${data[i].data.date}&docId=${data[i].docId}`
+            },
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "เพิ่มอาหารมื้อเช้าอีก",
+              "uri": "https://linecorp.com"
+            },
+            "flex": 1,
+            "gravity": "center"
+          }
+        ]
+      }
+    }
+  ]
+}

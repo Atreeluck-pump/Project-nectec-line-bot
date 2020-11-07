@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6c2b44fe70.js" crossorigin="anonymous"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+
+    <title>รายงานพลังงานจากอาหาร</title>
+
+    <style>
+        body {
+            background-color: #536878;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        a {
+            color: rgb(39, 40, 41) !important;
+        }
+
+        a:hover {
+            color: #25B8E0 !important;
+        }
+
+        #chartKcal {
+            width: 100%;
+            height: 450px;
+        }
+
+        button[id="btnDownloadExcel"],
+        button[id="btnSendComment"] {
+            border-radius: 0px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <!-- ChartKcal Modal -->
+    <div class="modal fade bd-example-modal-xl" id="modalKcal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">น้ำหนัก</h5>
+                    <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="chartKcal"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3 text-white">
+        <h5>วันที่ <text id="txtDateStart"></text> ถึง <text id="txtDateEnd"></text></h5>
+    </div>
+
+    <!-- สรุป -->
+    <div class="container py-1">
+        <div class="bg-white p-3 mb-0 shadow">
+            <p class="h5 font-weight-bold text-black">สรุป</p>
+            <hr>
+
+            <p class="h6 text-black">พลังงานที่ได้รับต่อวันโดยเฉลี่ย
+            </p>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><b>คุณได้รับพลังงานอาหารเฉลี่ย <text id="txtDateResultKcal"></text>
+                                วัน </b><text id="txtKcalCarboAvg"></text> กิโลแคลลอรี่
+                            ซึ่ง
+                            <font color="red"><text id="txtResultBmr"></text></font> <text
+                                id="txtCommentKcal">พลังงานที่ร่างกายเผาผลาญจากการทำงานของร่างกาย <text
+                                    id="txtBmr"></text> กิโลแคลลอรี่</text>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="h6 text-black">สัดส่วนของสารอาหารหลักโดยเฉลี่ย</p>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><b>คาร์โบไฮเดรต </b>เฉลี่ยโดยประมาณ <text id="txtCarboGram"></text>
+                            กรัม หรือเท่ากับ <text id="txtCarboKcal"></text> กิโลแคลลอรี่</li>
+                        <li class="list-inline-item">
+                            <font color="red"><text id="txtResultCarbo1"></text></font> <text id="txtEndCarbo"></text>
+                        </li>
+                        <li class="list-inline-item" id="txtRecommendCarbo1"><b>แนะนำให้</b>
+                            <font color="red"> <text id="txtAddCarbo1"></text></font><text
+                                id="txtAddRecomendCarbo1"></text>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><b>โปรตีน </b>เฉลี่ยโดยประมาณ <text id="txtProteinGram"></text>
+                            กรัม หรือเท่ากับ <text id="txtProteinKcal"></text> กิโลแคลลอรี่</li>
+                        <li class="list-inline-item">
+                            <font color="red"><text id="txtResultProtein1"></text></font> <text
+                                id="txtEndProtein"></text>
+                        </li>
+                        <li class="list-inline-item" id="txtRecommendProtein1"><b>แนะนำให้</b>
+                            <font color="red"> <text id="txtAddProtein1"></text></font> <text
+                                id="txtAddRecomendProtein1"></text>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><b>ไขมัน </b>เฉลี่ยโดยประมาณ <text id="txtFatGram"></text> กรัม
+                            หรือเท่ากับ <text id="txtFatKcal"></text> กิโลแคลลอรี่</li>
+                        <li class="list-inline-item">
+                            <font color="red"><text id="txtResultFat1"></text></font> <text id="txtEndFat"></text>
+                        </li>
+                        <li class="list-inline-item" id="txtRecommendFat1"><b>แนะนำให้</b>
+                            <font color="red"> <text id="txtAddFat1"></text></font> <text
+                                id="txtAddRecomendFat1"></text>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- table -->
+    <div class="container">
+        <table class="table table-bordered table-responsive bg-white text-center mb-0 shadow" id="tableRecord">
+            <thead>
+                <tr>
+                    <th rowspan="2">วันที่</th>
+                    <th rowspan="2">อาหาร</th>
+                    <th colspan="3">พลังงาน (%)</th>
+                </tr>
+                <tr>
+                    <th>คาร์โบไฮเดรต</th>
+                    <th>โปรตีน</th>
+                    <th>ไขมัน</th>
+                    <th>พลังงานรวม (Kcal)</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <br>
+
+
+
+    <!------------------------ Liff SDK ------------------------>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/th.js"
+        integrity="sha256-p2W93O+vSx9WeMoysQcwoOkbExKS/gISb+muTjcgQDA=" crossorigin="anonymous"></script>
+
+    <!-- Sweet alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- amChart -->
+    <script src="//www.amcharts.com/lib/4/core.js"></script>
+    <script src="//www.amcharts.com/lib/4/charts.js"></script>
+    <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+    <script src="js/history.js"></script>
+
+</body>
+
+</html>

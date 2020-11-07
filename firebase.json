@@ -1,0 +1,72 @@
+{
+  "functions": {
+    "source": ".",
+    "predeploy": [
+      "npm run lint"
+    ]
+  },
+  "hosting": {
+    "headers": [
+      {
+        "source": "**/*.@(js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0, no-store, no-cache, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|eot|otf|ttf|ttc|woff|woff2|font.css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      }
+    ],
+    "target": "liff",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/profile",
+        "destination": "/profile.html"
+      },
+      {
+        "source": "/addinformation",
+        "destination": "/addinformation.html"
+      },
+      {
+        "source": "/addMeal",
+        "destination": "/addMeal.html"
+      },
+      {
+        "source": "/editMeal",
+        "destination": "/editMeal.html"
+      },
+      {
+        "source": "/bmi",
+        "destination": "/bmi.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

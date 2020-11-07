@@ -1,0 +1,328 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ประวัติการกิน",
+          "size": "md",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "หน่วย: Kcal",
+                  "size": "xxs",
+                  "align": "end"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                }
+              ],
+              "backgroundColor": "#000000",
+              "height": "1px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "วัน",
+                          "size": "sm",
+                          "align": "center"
+                        }
+                      ],
+                      "flex": 1
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "รายละเอียดอาหาร",
+                          "size": "sm",
+                          "align": "center"
+                        }
+                      ],
+                      "flex": 2
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "พลังงาน",
+                          "size": "sm",
+                          "align": "center"
+                        }
+                      ],
+                      "flex": 1
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                }
+              ],
+              "backgroundColor": "#000000",
+              "height": "1px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "2/03/63",
+                          "size": "sm",
+                          "align": "start",
+                          "flex": 1
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "filler"
+                            }
+                          ],
+                          "width": "1px",
+                          "backgroundColor": "#000000"
+                        },
+                        {
+                          "type": "text",
+                          "text": "hello, world",
+                          "flex": 2,
+                          "size": "sm",
+                          "wrap": true
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "filler"
+                            }
+                          ],
+                          "width": "1px",
+                          "backgroundColor": "#000000"
+                        },
+                        {
+                          "type": "text",
+                          "text": "1500",
+                          "flex": 1,
+                          "size": "sm",
+                          "align": "center"
+                        }
+                      ],
+                      "flex": 1
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "2/03/63",
+                          "size": "sm",
+                          "align": "start",
+                          "flex": 1
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "filler"
+                            }
+                          ],
+                          "width": "1px",
+                          "backgroundColor": "#000000"
+                        },
+                        {
+                          "type": "text",
+                          "text": "hello, world",
+                          "flex": 2,
+                          "size": "sm",
+                          "wrap": true
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "filler"
+                            }
+                          ],
+                          "width": "1px",
+                          "backgroundColor": "#000000"
+                        },
+                        {
+                          "type": "text",
+                          "text": "1500",
+                          "flex": 1,
+                          "size": "sm",
+                          "align": "center"
+                        }
+                      ],
+                      "flex": 1
+                    },
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "width": "1px",
+                      "backgroundColor": "#000000"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                }
+              ],
+              "backgroundColor": "#000000",
+              "height": "1px"
+            }
+          ]
+        }
+      ]
+    },
+    "styles": {
+      "footer": {
+        "separator": true
+      }
+    }
+  }

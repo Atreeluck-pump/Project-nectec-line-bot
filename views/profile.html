@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>โปรไฟล์</title>
+</head>
+
+
+<body>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img id="imageProfile">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">ชื่อผู้ใช้:</p>
+            </div>
+            <div class="col-8">
+                <a href="#modalName" data-toggle="modal" data-target="#modalName"><text id="txtName"></text></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">เพศ:</p>
+            </div>
+            <div class="col-8">
+                <a href="#modalGender" data-toggle="modal" data-target="#modalGender"><text id="txtGender"></text></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">วันเกิด:</p>
+            </div>
+            <div class="col-8">
+                <a href="#modalBday" data-toggle="modal" data-target="#modalBday"><text id="txtBday"></text></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">น้ำหนัก:</p>
+            </div>
+            <div class="col-8">
+                <a href="#modalWeight" data-toggle="modal" data-target="#modalWeight"><text id="txtWeight"></text>
+                    กิโลกรัม</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">ส่วนสูง:</p>
+            </div>
+            <div class="col-8">
+                <a href="#modalHeight" data-toggle="modal" data-target="#modalHeight"><text id="txtHeight"></text>
+                    เซนติเมตร</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">พลังงานที่ควรได้รับ:</p>
+            </div>
+            <div class="col-8">
+                <a ></a><text id="txtBmr"></text>
+                    Kcal</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">ผู้ดูแล:</p>
+            </div>
+            <div class="col-8">
+                <a href="#modalTrainer" data-toggle="modal" data-target="#modalTrainer"><text
+                        id="txtTrainer"></text></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-right">BMI:</p>
+            </div>
+            <div class="col-8">
+                <text id="txtBmi"></text> <small>kg/m2</small> (<text id="txtResultBmi"></text>)
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Name -->
+    <div class="modal fade" id="modalName" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNameTitle">กรุณาใส่ข้อมูล</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputFullname" class="col-form-label">ชื่อ</label>
+                        <input type="text" class="form-control" id="inputFullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLastname" class="col-form-label">นามสกุล</label>
+                        <input type="text" class="form-control" id="inputLastname">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSubmitName">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Gender -->
+    <div class="modal fade" id="modalGender" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGenderTitle">กรุณาระบุ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputGender" class="col-form-label">เพศ: &nbsp </label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input name="inputGender" id="gender1" type="radio" class="custom-control-input" value="ชาย"
+                                checked>
+                            <label for="gender1" class="custom-control-label">ชาย</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input name="inputGender" id="gender2" type="radio" class="custom-control-input"
+                                value="หญิง">
+                            <label for="gender2" class="custom-control-label">หญิง</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSubmitGender">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bday -->
+    <div class="modal fade" id="modalBday" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBdayTitle">กรุณาใส่ข้อมูล</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputBday" class="col-form-label">วัน เดือน ปี (พ.ศ.)</label>
+                        <input type="date" class="form-control" id="inputBday">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSubmitBday">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Weight -->
+    <div class="modal fade" id="modalWeight" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWeightTitle">กรุณาใส่ข้อมูล</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputWeight" class="col-form-label">น้ำหนัก กิโลกรัม</label>
+                        <input type="text" inputmode="decimal" class="form-control" maxlength="6" id="inputWeight">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSubmitWeight">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Height -->
+    <div class="modal fade" id="modalHeight" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHeightTitle">กรุณาใส่ข้อมูล</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputHeight" class="col-form-label">ส่วนสูง เซนติเมตร</label>
+                        <input type="text" inputmode="decimal" class="form-control" maxlength="6" id="inputHeight">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSubmitHeight">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Trainer -->
+    <div class="modal fade" id="modalTrainer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrainerTitle">ผู้ดูแล</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <label for="inputTrainer" class="col-form-label">QR Code</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputTrainer">
+
+                        <div class="input-group-append">
+                            <div id="btnScanCode" class="input-group-text">
+                                <ion-icon name="qr-code-outline" onclick="scanCode();"></ion-icon>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="btnSubmitTrainer">บันทึก</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chartdiv"></div>
+
+    <!-- amChart -->
+    <script src="//www.amcharts.com/lib/4/core.js"></script>
+    <script src="//www.amcharts.com/lib/4/charts.js"></script>
+    <script src="//www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+    <!-- Ajax upload file -->
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9 "></script>
+
+    <!------------------------ Liff SDK ------------------------>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/th.js"
+        integrity="sha256-p2W93O+vSx9WeMoysQcwoOkbExKS/gISb+muTjcgQDA=" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+        crossorigin="anonymous "></script>
+
+    <!-- Script add meal -->
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

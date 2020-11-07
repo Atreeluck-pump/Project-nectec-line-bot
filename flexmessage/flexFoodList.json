@@ -1,0 +1,405 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F001.jpeg?alt=media&token=914ce531-3078-4c5b-86d2-9752badf903b",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดข้าว-แป้ง",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F001.jpeg?alt=media&token=914ce531-3078-4c5b-86d2-9752badf903b"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F002.jpeg?alt=media&token=0d937fc3-2642-4a9a-86d8-bfd129f6f1c7",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดผลไม้",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F002.jpeg?alt=media&token=0d937fc3-2642-4a9a-86d8-bfd129f6f1c7"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F003.jpeg?alt=media&token=26e02c22-86bf-484f-a4eb-b9bad6ab0b06",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดผัก ประเภท ก.",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F003.jpeg?alt=media&token=26e02c22-86bf-484f-a4eb-b9bad6ab0b06"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F004.jpeg?alt=media&token=c0b7dc5e-8664-4141-8b28-034e91031026",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดผัก ประเภท ข.",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "http://linecorp.com/"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F005.jpeg?alt=media&token=edf28208-1d10-4b84-bf94-0adcbe2b7b17",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดนม",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F005.jpeg?alt=media&token=edf28208-1d10-4b84-bf94-0adcbe2b7b17"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F006.jpeg?alt=media&token=0a224c37-b47d-457f-a80a-8fc4fa6d35a9",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดเนื้อสัตว์",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F006.jpeg?alt=media&token=0a224c37-b47d-457f-a80a-8fc4fa6d35a9"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F007.jpeg?alt=media&token=f8653256-a22d-453a-8325-c3ebc6d4cab4",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดเนื้อสัตว์",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F007.jpeg?alt=media&token=f8653256-a22d-453a-8325-c3ebc6d4cab4"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F008.jpeg?alt=media&token=40511d70-a1b7-4839-98df-8367481c91b9",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "หมวดไขมัน",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Ffood%20list%2F008.jpeg?alt=media&token=40511d70-a1b7-4839-98df-8367481c91b9"
+      }
+    }
+  ]
+}

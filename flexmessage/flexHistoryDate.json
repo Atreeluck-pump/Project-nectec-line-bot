@@ -1,0 +1,116 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ประวัติการกินย้อนหลัง",
+        "size": "lg",
+        "weight": "regular"
+      },
+      {
+        "type": "text",
+        "text": "ระหว่างวันที่",
+        "size": "xxs"
+      }
+    ],
+    "backgroundColor": "#a1e6e3"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "หน่วย:Kcal",
+        "align": "end",
+        "size": "xxs"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ว/ด/ป",
+            "size": "md",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "พลังงาน",
+            "size": "md",
+            "flex": 2
+          },
+          {
+            "type": "filler"
+          }
+        ],
+        "margin": "md",
+        "height": "30px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "2/03/63",
+                "size": "sm",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "1500",
+                "size": "sm",
+                "flex": 1,
+                "offsetStart": "10px",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "รายละเอียด",
+                "size": "sm",
+                "flex": 1,
+                "align": "end",
+                "color": "#f57b51",
+                "action": {
+                  "type": "message",
+                  "label": "ย้อนหลัง",
+                  "text": "hello"
+                }
+              }
+            ],
+            "height": "30px"
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "รายละเอียด",
+          "uri": "https://liff.line.me/1653872646-L6wW9DlA"
+        },
+        "height": "sm",
+        "style": "primary",
+        "color": "#75daad"
+      }
+    ]
+  }
+}

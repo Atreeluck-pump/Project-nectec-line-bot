@@ -1,0 +1,223 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "micro",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Fheadmeal%2Fmorning.jpeg?alt=media&token=f6f64ea5-a3c2-4c3d-b991-993adb1de6d9",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:2.5",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "อาหารเช้า",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "height": "5px"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "เพิ่ม",
+                          "uri": "http://linecorp.com/"
+                        },
+                        "style": "primary",
+                        "position": "relative",
+                        "height": "sm",
+                        "color": "#F8BA00",
+                        "flex": 2
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "width": "5px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "message",
+                          "label": "ดู",
+                          "text": "hello"
+                        },
+                        "style": "primary",
+                        "position": "relative",
+                        "height": "sm",
+                        "color": "#E17F96",
+                        "flex": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#A7303Acc",
+            "paddingAll": "10px",
+            "paddingTop": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "micro",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://firebasestorage.googleapis.com/v0/b/hba-project-db81d.appspot.com/o/flex%2Fheadmeal%2Fmorning.jpeg?alt=media&token=f6f64ea5-a3c2-4c3d-b991-993adb1de6d9",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:2.5",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "อาหารเช้า",
+                    "size": "md",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "height": "5px"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "เพิ่ม",
+                          "uri": "http://linecorp.com/"
+                        },
+                        "style": "primary",
+                        "position": "relative",
+                        "height": "sm",
+                        "color": "#F8BA00",
+                        "flex": 2
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "width": "5px"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "message",
+                          "label": "ดู",
+                          "text": "hello"
+                        },
+                        "style": "primary",
+                        "position": "relative",
+                        "height": "sm",
+                        "color": "#E17F96",
+                        "flex": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#A7303Acc",
+            "paddingAll": "10px",
+            "paddingTop": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    }
+  ]
+}

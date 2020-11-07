@@ -1,0 +1,12 @@
+body {
+    font-family: 'Mali', cursive;
+    font-size: 16px;
+    background-color: #EDF1F2;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+

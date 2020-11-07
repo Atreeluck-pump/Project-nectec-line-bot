@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/addMeal.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="hidden" id="canvasImg">
+        <!-- Image food -->
+        <div class="form-group">
+            <div class="row">
+                <div class="file-upload">
+                    <button class="file-upload-btn" type="button"
+                        onclick="$('.file-upload-input').trigger( 'click' )">เลือกรูปภาพ</button>
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" type='file' id="inputImageFood" onchange="readURL(this);"
+                            accept="image/*" />
+                        <div class="drag-text">
+                            <ion-icon name="images"></ion-icon>
+                            เลือกรูปภาพ
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <!-- <div class="image-title-wrap">
+                            <button type="button" onclick="removeUpload()" class="remove-image"><span
+                                    class="image-title">Uploaded Image</span></button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Type food -->
+        <div class="form-group">
+            <label for="inputTypeFood">ประเภทอาหาร</label>
+            <select class="form-control form-control-sm" id="inputTypeFood">
+                <option value="" disabled>เลือกประเภท</option>
+                <option value="alacarte" selected>อาหารจานเดียว</option>
+                <option value="sidedish">ข้าว/กับข้าว</option>
+                <option value="dessert">อาหารว่าง/ขนมหวาน</option>
+                <option value="fruits">ผลไม้</option>
+                <option value="drink">เครื่องดื่ม</option>
+                <option value="snacks">ขนมกรุบกรอบ</option>
+            </select>
+        </div>
+        <!-- Name meal-->
+        <div class="form-group">
+            <label for="inputNameMeal">ชื่อเมนู</label>
+            <input type="text" class="form-control form-control-sm" id="inputNameMeal" required>
+        </div>
+        <!-- Rice Fruits -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputRice">ข้าว-แป้ง (ทัพพี)</label>
+                    <div class="input-group">
+                        <input type="text" inputmode="decimal" class="form-control  form-control-sm" id="inputRice"
+                            maxlength="4">
+                        <div class="input-group-append">
+                            <div id="btnScanCode" class="input-group-text">
+                                <ion-icon name="help" onclick="modalImg('rice')"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="inputFruits">ผลไม้ (ส่วน)</label>
+                    <div class="input-group">
+                        <input type="text" inputmode="decimal" class="form-control  form-control-sm" id="inputFruits"
+                            maxlength="4">
+                        <div class="input-group-append">
+                            <div id="btnScanCode" class="input-group-text">
+                                <ion-icon name="help" onclick="modalImg('fruits')"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Meat -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputTypeMeat">เนื้อสัตว์ (ส่วน)</label>
+                    <div class="input-group">
+                        <select class="form-control form-control-sm" id="inputTypeMeat">
+                            <option value="nonfat">ไม่มีไขมัน</option>
+                            <option value="lowfat">ไขมันต่ำ</option>
+                            <option value="medium">ไขมันปานกลาง</option>
+                            <option value="highfat">ไขมันสูง</option>
+                        </select>
+                        <input type="text" inputmode="decimal" class="form-control form-control-sm" id="inputMeat"
+                            maxlength="4">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <ion-icon name="help" onclick="modalImg('meat')"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vegetable -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputTypeVegetable">ผัก (ทัพพี)</label>
+                    <div class="input-group">
+                        <select class="form-control form-control-sm" id="inputTypeVegetable">
+                            <option value="a">ประเภท ก.</option>
+                            <option value="b">ประเภท ข.</option>
+                        </select>
+                        <input type="text" inputmode="decimal" class="form-control form-control-sm" id="inputVegetable"
+                            maxlength="4">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <ion-icon name="help" onclick="modalImg('vegetable')"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Milk -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputTypMilk">นม (แก้ว)</label>
+                    <div class="input-group">
+                        <select class="form-control form-control-sm" id="inputTypeMilk">
+                            <option value="nonfat">ไม่มีไขมัน</option>
+                            <option value="lowfat">พร่องไขมัน</option>
+                            <option value="fat">ไขมันเต็ม</option>
+                        </select>
+                        <input type="text" inputmode="decimal" class="form-control form-control-sm" id="inputMilk"
+                            maxlength="4">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <ion-icon name="help" onclick="modalImg('milk')"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sugar Sodium -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputSugar">น้ำตาล (ช้อนชา)</label>
+                    <div class="input-group">
+                        <input type="text" inputmode="decimal" class="form-control  form-control-sm" id="inputSugar"
+                            maxlength="4">
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="inputSodium">โซเดียม (ช้อนชา)</label>
+                    <div class="input-group">
+                        <input type="text" inputmode="decimal" class="form-control  form-control-sm" id="inputSodium"
+                            maxlength="4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fat -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputFat">ไขมัน/ถั่ว (ช้อนชา)</label>
+                    <div class="input-group">
+                        <input type="text" inputmode="decimal" class="form-control  form-control-sm" id="inputFat"
+                            maxlength="4">
+                        <div class="input-group-append">
+                            <div id="btnScanCode" class="input-group-text">
+                                <ion-icon name="help" onclick="modalImg('fat')"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+
+        <button id="btnUpload" class="btn btn-primary btn-block">บันทึก</button>
+        <br>
+    </div>
+
+    <!-- Ajax upload file -->
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js "></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9 "></script>
+
+    <!------------------------ Liff SDK ------------------------>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/th.js"
+        integrity="sha256-p2W93O+vSx9WeMoysQcwoOkbExKS/gISb+muTjcgQDA=" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+        crossorigin="anonymous "></script>
+
+    <!-- Script add meal -->
+    <script src="js/addMeal.js"></script>
+    <!-- Script calculateKcal -->
+    <script src="js/calculateKcal.js"></script>
+    <!-- Script calculateBalance -->
+    <script src="js/calculateBalance.js"></script>
+
+</body>
+
+</html>

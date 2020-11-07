@@ -1,0 +1,221 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ประวัติน้ำหนัก",
+          "size": "md",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                }
+              ],
+              "height": "1px",
+              "backgroundColor": "#000000"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "width": "1px",
+                  "backgroundColor": "#000000"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "วันที่",
+                      "align": "center"
+                    }
+                  ],
+                  "flex": 3
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "width": "1px",
+                  "backgroundColor": "#000000"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "น้ำหนัก (กก.)",
+                      "align": "center"
+                    }
+                  ],
+                  "flex": 2
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "width": "1px",
+                  "backgroundColor": "#000000"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                }
+              ],
+              "height": "1px",
+              "backgroundColor": "#000000"
+            }
+          ],
+          "margin": "lg"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "width": "1px",
+                  "backgroundColor": "#000000"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "23-มกราคม-2563",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "23-มกราคม-2563",
+                      "size": "sm",
+                      "flex": 1
+                    },
+                    {
+                      "type": "text",
+                      "text": "23-มกราคม-2563",
+                      "size": "sm",
+                      "flex": 1
+                    }
+                  ],
+                  "flex": 3
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "width": "1px",
+                  "backgroundColor": "#000000"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "64",
+                      "size": "sm",
+                      "flex": 1,
+                      "align": "center"
+                    },
+                    {
+                      "type": "text",
+                      "text": "64",
+                      "size": "sm",
+                      "flex": 1,
+                      "align": "center"
+                    },
+                    {
+                      "type": "text",
+                      "text": "64",
+                      "size": "sm",
+                      "flex": 1,
+                      "align": "center"
+                    }
+                  ],
+                  "flex": 2
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "width": "1px",
+                  "backgroundColor": "#000000"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                }
+              ],
+              "height": "1px",
+              "backgroundColor": "#000000"
+            }
+          ]
+        }
+      ]
+    },
+    "styles": {
+      "footer": {
+        "separator": true
+      }
+    }
+  }
